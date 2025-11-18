@@ -5,56 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurace Bříško</title>
   <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <!-- HLAVIČKA -->
-  <img class="logo" src="images/logo.svg" alt="Restaurace Bříško">
 
-  <nav>
-    <a class="nav__link" href="#">Jídelní lístek</a>
-    <a class="nav__link" href="#">O nás</a>
-    <a class="nav__link" href="#">Kontakt</a>
-    <a class="nav__link" href="#">Rezervace</a>
-  </nav>
+ <section>
 
+  <header class="header">
+    <div class="container"> 
+      <div class="logo">
+        <img class="logo" src="images/logo.svg" alt="Restaurace Bříško">
+      </div>
 
+    <nav class="menu">
+      <a class="nav__link" href="#">Jídelní lístek</a>
+      <a class="nav__link" href="#">O nás</a>
+      <a class="nav__link" href="#">Kontakt</a>
+      <a class="nav__link" href="#">Rezervace</a>
+    </nav>
+    </div>
+  </header>
+ </section>
 
   <!-- sekce HERO -->
-  <h1>Zážitek z jídla</h1>
-  <p>Objevte harmonii chutí v prostředí,<br> kde se tradice potkává s moderní gastronomií.</p>
-  <a href="#">Rezervovat stůl</a>
 
+  <section class="banner">
+    <div class="container"> 
 
+  <h1 class="banner__title">Zážitek z jídla</h1>
+  <p class="banner__description">Objevte harmonii chutí v prostředí,<br> kde se tradice potkává s moderní gastronomií.</p>
+  <a href="#" class="button" >Rezervovat stůl</a>
+
+  </div>
+  </section>
 
   <!-- sekce JÍDELNÍ LÍSTEK -->
+
+  <section class="container_listek">
+
   <h2>Jídelní lístek</h2>
 
-  <img src="images/snidane.svg" alt="" width="40" height="40">
+  <div class="jidelni-listek">
+  <img class="ikona__img" src="images/snidane.svg"  alt="" width="40" height="40">
   <h3>Snídaně</h3>
-  <p>Čerstvé pečivo, vejce, jogurty, saláty a domácí pomazánky.</p>
-  <a href="#">Ukázat menu</a>
+  <p class="description">Čerstvé pečivo, vejce, jogurty, saláty a domácí pomazánky.</p>
+  <a class="odkaz" href="#">Ukázat menu</a>
+  </div>
 
-  <img src="images/hlavni-jidla.svg" alt="" width="40" height="40">
+  <div class="jidelni-listek">
+  <img class="ikona__img" src="images/hlavni-jidla.svg" alt="" width="40" height="40">
   <h3>Hlavní jídla</h3>
-  <p>Vše z čerstvých surovin. Maso, ryby i vege&shy;tari&shy;ánské speciality.</p>
-  <a href="#">Ukázat menu</a>
+  <p class="description">Vše z čerstvých surovin. Maso, ryby i vege&shy;tari&shy;ánské speciality.</p>
+  <a class="odkaz" href="#">Ukázat menu</a>
+  </div>
 
-  <img src="images/grill.svg" alt="" width="40" height="40">
+  <div class="jidelni-listek">
+  <img class="ikona__img" src="images/grill.svg" alt="" width="40" height="40">
   <h3>Zahradní grill</h3>
-  <p>Letní atmosféra, vůně grilu. Marinované maso, zelenina přímo z ohně.</p>
-  <a href="#">Ukázat menu</a>
+  <p class="description">Letní atmosféra, vůně grilu. Marinované maso, zelenina přímo z ohně.</p>
+  <a class="odkaz" href="#">Ukázat menu</a>
+  </div>
 
-  <img src="images/napoje.svg" alt="" width="40" height="40">
+  <div class="jidelni-listek">
+  <img class="ikona__img" src="images/napoje.svg" alt="" width="40" height="40">
   <h3>Nápoje</h3>
-  <p>Osvěžující limonády, výběrová vína, lokální piva i&nbsp;skvělá káva.</p>
-  <a href="#">Ukázat menu</a>
+  <p class="description">Osvěžující limonády, výběrová vína, lokální piva i&nbsp;skvělá káva.</p>
+  <a class="odkaz" href="#">Ukázat menu</a>
+  </div>
 
+  </section>
 
 
   <!-- sekce ROZVOZ -->
-  <img src="images/rozvoz-na-sirku.jpg" alt="Rozvoz jídla domů">
 
+  <section class="container_rozvoz">
+
+    <div class="polovina">
+     <picture>
+    <source srcset="images/rozvoz-na-vysku.jpg" media="min.width:1100px">
+    <img class="rozvoz_img" src="images/rozvoz-na-sirku.jpg" alt="Rozvoz jídla domů">
+  </picture>
+    </div>
+
+    <div class="polovina">
   <h2>Nejrychlejší rozvoz jídla ve městě</h2>
 
   <ul>
@@ -74,28 +113,41 @@
 
   <p>Máte hlad a nechce se vám vařit? My to chápeme! Objednejte si u nás a my vám jídlo doručíme co nejrychleji až ke dveřím - teplé, voňavé a připravené s láskou. </p>
 
-  <a href="#">Objednat jídlo</a>
+  <a href="#" class="button_jidlo" >Objednat jídlo</a>
 
+  </div>
+  </section>
 
 
   <!-- PATIČKA -->
-  <img src="images/logo-footer.svg" alt="Restaurace Bříško">
 
-  <p>
-    Restaurace Bříško<br>
-    U pupíku 42<br>
-    123 45 Najedlov
-  </p>
+  <section class="container_paticka">
 
-  <ul>
-    <li><a href="#">Jídelní lístek</a></li>
-    <li><a href="#">O nás</a></li>
-    <li><a href="#">Kontakt</a></li>
-    <li><a href="#">Rezervace</a></li>
-  </ul>
+    <div class="polovina">
+      <div class="logo_footer">
+        <img class="logo_footer" src="images/logo-footer.svg" alt="Restaurace Bříško">
+      </div>
 
-  <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+      <p>
+     Restaurace Bříško<br>
+      U pupíku 42<br>
+      123 45 Najedlov
+      </p>
+    </div>
 
+     <div class="polovina">
+      <ul class="menu_footer">
+      <li><a href="#">Jídelní lístek</a></li>
+      <li><a href="#">O nás</a></li>
+      <li><a href="#">Kontakt</a></li>
+      <li><a href="#">Rezervace</a></li>
+      </ul>
+
+      <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+
+    </div>
+
+  </section>
 
 </body>
 </html>
