@@ -32,7 +32,6 @@ h2{
   font-weight: 500;
   line-height: 1.2;
   margin: 40px;
-  text-align: center;
 }
 
 h3{
@@ -52,17 +51,16 @@ body{
   color: var(--color-text);
 }
 
-.container{
-  max-width: 48rem;
-  margin-inline: auto;
+section{
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 /* *section hlavicka* */
 .container_header{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  padding: 50px 20px 50px 20px;
   text-align: center;
 }
 
@@ -92,11 +90,12 @@ body{
 /* *section banner* */
 .container_banner{
   background: url(images/hero.jpg) no-repeat center/cover;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .banner__title {
@@ -107,7 +106,6 @@ body{
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 1.125rem;
-  text-align: center;
 }
 
 .button{
@@ -129,23 +127,23 @@ body{
 
 /* *section jidelni listek* */
 .container_listek{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+.container_listek h2{
+  text-align: center;
 }
 
 .jidelni-listek{
-  max-width: 500px;
   border: 1px solid var(--color-secondary-bright);
   border-radius: var(--radius);
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 30px 50px 30px 50px;
+  margin-bottom: 30px;
+  padding: 30px 20px 30px 20px;
 }
 
 .ikona__img{
- position: relative;
  display: block;
  margin: 0 auto;
  margin-bottom: 20px;
@@ -172,12 +170,7 @@ body{
 /* *section rozvoz* */
 .container_rozvoz{
   background: var(--color-section-bg);
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 40px 40px 40px 40px;
 }
 
 .rozvoz_img{
@@ -211,7 +204,6 @@ ul li {
   margin-bottom: 40px;
 }
 
-
 .button_jidlo{
   display: inline-block;
   padding: 15px 30px 15px 30px;
@@ -231,25 +223,13 @@ ul li {
 
 /* *section paticka* */
 .container_paticka{
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding: 40px 40px 20px 40px;
   background-color: var(--color-footer-bg);
   color:var(--color-secondary-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.polovina{
-  max-width: 500px;
-  width: 100%;
-  text-align: left;
 }
 
 .logo_footer img{
   height: 40px;
-  padding-left: 0;
 }
 
 .menu_footer{
@@ -264,6 +244,5 @@ ul li {
 
 .menu_footer a{
   color: var(--color-secondary-bright);
-  padding-left: 0;
-  padding-right: 15px;
+  padding-right: 20px;
 }
