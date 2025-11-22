@@ -15,8 +15,8 @@
 
   <!-- HLAVIČKA -->
 
- <section>
-  <div class="container_header">
+ <section class="header">
+  <div class="container">
 
       <div class="logo_header">
         <img class="logo" src="images/logo.svg" alt="Restaurace Bříško">
@@ -34,11 +34,12 @@
 
   <!-- sekce HERO -->
 
-  <section>
-   <div class="container_banner"> 
+  <section class="hero">
+   <div class="container"> 
 
     <h1 class="banner__title">Zážitek z jídla</h1>
-    <p class="banner__description">Objevte harmonii chutí v prostředí,<br> kde se tradice potkává s moderní gastronomií.</p>
+    <p class="banner__description">Objevte harmonii chutí v prostředí,<br> kde se tradice potkává s moderní gastronomií.
+    </p>
     <a href="#" class="button" >Rezervovat stůl</a>
 
    </div>
@@ -46,39 +47,41 @@
 
   <!-- sekce JÍDELNÍ LÍSTEK -->
 
-  <section>
-    <div class="container_listek">
+  <section class="menu-section">
+    <div class="container">
 
     <h2>Jídelní lístek</h2>
 
     <div class="cards-wrapper">
-  <div class="jidelni-listek">
+
+  <div class="menu-card">
   <img class="ikona__img" src="images/snidane.svg"  alt="" width="40" height="40">
   <h3>Snídaně</h3>
   <p class="description">Čerstvé pečivo, vejce, jogurty, saláty a domácí pomazánky.</p>
   <a class="odkaz" href="#">Ukázat menu</a>
   </div>
 
-  <div class="jidelni-listek">
+  <div class="menu-card">
   <img class="ikona__img" src="images/hlavni-jidla.svg" alt="" width="40" height="40">
   <h3>Hlavní jídla</h3>
   <p class="description">Vše z čerstvých surovin. Maso, ryby i vege&shy;tari&shy;ánské speciality.</p>
   <a class="odkaz" href="#">Ukázat menu</a>
   </div>
 
-  <div class="jidelni-listek">
+  <div class="menu-card">
   <img class="ikona__img" src="images/grill.svg" alt="" width="40" height="40">
   <h3>Zahradní grill</h3>
   <p class="description">Letní atmosféra, vůně grilu. Marinované maso, zelenina přímo z ohně.</p>
   <a class="odkaz" href="#">Ukázat menu</a>
   </div>
 
-  <div class="jidelni-listek">
+  <div class="menu-card">
   <img class="ikona__img" src="images/napoje.svg" alt="" width="40" height="40">
   <h3>Nápoje</h3>
   <p class="description">Osvěžující limonády, výběrová vína, lokální piva i&nbsp;skvělá káva.</p>
   <a class="odkaz" href="#">Ukázat menu</a>
   </div>
+
   </div>
 
     </div>
@@ -87,8 +90,8 @@
 
   <!-- sekce ROZVOZ -->
 
-  <section>
-    <div class="container_rozvoz">
+  <section class="delivery">
+    <div class="container">
 
     <div class="polovina">
 
@@ -98,10 +101,10 @@
       </picture>
     </div>
 
-     <div class="polovina">
+     <div class="polovina rozvoz__text">
       <h2>Nejrychlejší rozvoz jídla ve městě</h2>
 
-      <ul>
+      <ul class="delivery-list">
       <li>
         <img src="images/hodiny.svg" alt="" width="40" height="40">
         Dovezeme do 30 minut
@@ -127,10 +130,10 @@
 
   <!-- PATIČKA -->
 
-  <section>
-    <div class="container_paticka">
+  <section class="footer">
+    <div class="container">
 
-    <div class="polovina">
+    <div class="polovina footer_column">
       <div class="logo_footer">
         <img class="logo_footer" src="images/logo-footer.svg" alt="Restaurace Bříško">
       </div>
@@ -142,7 +145,7 @@
       </p>
     </div>
 
-     <div class="polovina">
+     <div class="polovina footer_column">
       <ul class="menu_footer">
       <li><a href="#">Jídelní lístek</a></li>
       <li><a href="#">O nás</a></li>
